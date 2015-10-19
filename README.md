@@ -4,7 +4,7 @@ The jStar Eclipse Plug-in
 There is a tutorial for the plugin:
    doc/jstar eclipse tutorial/jstar eclipse tutorial.pdf
 
-For more information, see http://www.jstarverifier.org
+For more information, see [http://www.jstarverifier.org](https://web.archive.org/web/20141217130023/http://jstarverifier.org/)
 
 This repository contains information related to the tool jStar-Eclipse presented in Foundations of Software Engineering, 2011. The tool was originally presented in this [paper](http://www.cl.cam.ac.uk/~mb741/papers/fse11.pdf).
 
