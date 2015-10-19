@@ -16,4 +16,4 @@ In this repository, for jStar-Eclipse you will find:
 * :x: Source code (not available)<br>
 * :white_check_mark: The original tool (available)
 
-This repository was constructed by [Sumeet Agarwal](https://github.com/sumeet29) under the supervision of Dr. Emerson Murphy-Hill.
+This repository was constructed by [Sumeet Agarwal](https://github.com/sumeet29) under the supervision of [Dr. Emerson Murphy-Hill](https://github.com/CaptainEmerson).
