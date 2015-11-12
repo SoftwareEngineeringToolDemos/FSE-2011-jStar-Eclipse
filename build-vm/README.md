@@ -2,12 +2,12 @@ This document specifies the instructions for creating an Ubuntu 14.04 LTS Virtua
 
 <b>Steps:</b>
 
-* Download & Install VirtualBox.<br/>
-* Download & Install Vagrant.<br/>
-* Create a new directory and place this VagrantFile in it.<br/>
+* Download & Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).<br/>
+* Download & Install [Vagrant](https://www.vagrantup.com/downloads.html).<br/>
+* Create a new directory and place this [VagrantFile]() in it.<br/>
 * Navigate to this directory from command prompt/terminal.<br/>
 * Run the command "vagrant up" on the command prompt/terminal.<br/>
-* This will create a new Ubuntu 14.04 LTS Virtual Machine with Desktop and install Oracle Java 7 and Eclipse Mars in it. Installing Eclipse might especially take some time.<br/>
+  * This will create a new Ubuntu 14.04 LTS Virtual Machine with Desktop and install Oracle Java 7 and Eclipse Mars in it. Installing Eclipse might especially take some time.<br/>
 * The Virtual Machine won't require you to login. But in case it goes to sleep, enter "vagrant" as the username as well as password.<br/>
 
 <b>References:</b>
