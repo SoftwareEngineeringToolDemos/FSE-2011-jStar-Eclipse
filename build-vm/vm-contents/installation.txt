@@ -1,0 +1,86 @@
+jStar-Eclipse tutorial
+
+/* This document contains instructions to build the tool from scratch*/
+
+/* This document is not our original work. It is taken (and modified slightly) from the GitHub repository of the tool made by its original authors. The link to the document in the original repository is https://github.com/seplogic/jstar-eclipse/blob/master/doc/jstar%20eclipse%20tutorial/jstar%20eclipse%20tutorial.pdf */
+/* The original authors of the tool are Dr. Daiva Naudziuniene, Dr. Matko Botincan, Dr. Dino Distefano, Dr. Mike Dodds, Dr. Radu Grigore and Dr. Matthew Parkinson */
+
+1.   Installation
+
+     Prerequisites:
+ 
+     --JDK 7 (not JRE since it does not have a compiler needed for annotation processing).
+      
+     --Eclipse Mars
+
+     Two ways:
+
+     I.  Update site (Recommended). Go to Help--->Install New Software....
+         Click Add... and type in the name and update site for the plug-in.
+         The update site for the jStar Eclipse Plug-in is
+         http://github.com/seplogic/jstar-eclipse/raw/master/com.jstar.eclipse.update.site/
+         Press OK.
+         Uncheck Group items by category.
+
+         The jStar Eclipse Plug-in should appear.
+         Select the plug-in and click Next.
+         Click Next in the following page. Accept the terms of the license agreement and click Finish.
+
+     II. Manually. Add the latest plug-in jar file
+         com.jstar.eclipse.update.site/plugins/com.jstar.eclipse_1.0.0.x.jar
+         to eclipse/dropins/ folder and restart Eclipse.
+
+2.   Configuration
+
+     2.1 Windows
+    
+     Go to Window---->Preferences---->jStar and set the required directories.
+     rt.jar could be found in jdk1.7.0/jre/lib/. It is required library for soot.
+     The plug-in will try to find it automatically.
+     
+     2.2 Linux
+    
+     rt.jar could be found in jdk1.7.0/jre/lib/. It is required library for soot.
+     The plug-in will try to _nd it automatically.
+
+     2.3 Mac
+
+     classes.jar and ui.jar could be found in
+     /System/Library/Frameworks/JavaVM.framework/Versions/1.7.0/Classes/. They are required libraries for soot.
+     The plug-in will try to find them automatically.
+
+3.   Structure
+
+     3.1 jStar root folder
+
+     All jStar input files (specification, logic rules, abstraction rules, generated jimple files) are stored in jStar root folder.
+     To specify jStar root folder, open project context menu, select Properties---->jStar.
+
+     3.2 External classes
+
+     To add a speci_cation for an external class (e.g. java.lang.Object), select Add specification for the external class.... 
+     This command can be found in
+     - The context menu of the java project
+     - The context menu of the java source file---->jStar Verification
+     - In the main toolbar
+     This will create and open spec, logic and abs files where you can write specification, logic and abstraction rules.
+     These files will be created in jStar root folder depending on the package of the class.
+     For example, if the jStar root folder is jStar and you are creating specification for java.lang.Object, input files will be created in jStar/java/lang/.
+
+4.   Verification
+     
+     You can verify source file by selecting Verify with jStar from the context menu or the main toolbar.
+
+     By selecting Verify with jStar Configurations..., you can indicate specifications, logic and abstraction rules.
+     In the window above you can create a new empty file or import a file for specification, logic and abstraction rules.
+     The location depends on the location of the source file and could not be changed.
+     Files are are contained in jStar root folder and locations shown are relative to the project.
+
+     4.1 Specification in source file
+
+     If you want to write specification in the source file, you need to add annotations.jar (can be found in com.jstar.eclipse.annotations / jar file) to your project Java Build Path.
+     
+     4.2 Verification errors
+     
+     In case there are some verification errors, you can see error messages in console.
+     The lines in source code where the problem appeared are annotated as squiggly marks.
