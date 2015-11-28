@@ -6,7 +6,9 @@ This document specifies the instructions for creating an Ubuntu 14.04 LTS Virtua
 * Download & Install [Vagrant](https://www.vagrantup.com/downloads.html).<br/>
 * Create a new directory and place this [VagrantFile](https://github.com/SoftwareEngineeringToolDemos/FSE-2011-jstar-eclipse/blob/master/build-vm/Vagrantfile) and [bootstrap1.sh](https://github.com/SoftwareEngineeringToolDemos/FSE-2011-jstar-eclipse/blob/master/build-vm/bootstrap1.sh), [bootstrap2.sh](https://github.com/SoftwareEngineeringToolDemos/FSE-2011-jstar-eclipse/blob/master/build-vm/bootstrap2.sh) and [bootstrap3.sh](https://github.com/SoftwareEngineeringToolDemos/FSE-2011-jstar-eclipse/blob/master/build-vm/bootstrap3.sh) files in it.<br/>
 * Navigate to this directory from command prompt/terminal.<br/>
-* Run the command "vagrant up" on the command prompt/terminal.<br/>
+* Run the command "vagrant plugin install vagrant-reload" on the command prompt/terminal.<br/>
+  * This will install the plugin to reload the Virtual Machine after specific intervals.<br/>
+* Once the plugin is installed, run the command "vagrant up" on the command prompt/terminal.<br/>
 * The Virtual Machine won't require you to login. But in case it goes to sleep, enter "vagrant" as the username as well as password.<br/>
 
 <b>References:</b>
