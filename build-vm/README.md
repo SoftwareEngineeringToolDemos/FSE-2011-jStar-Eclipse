@@ -18,3 +18,4 @@ This document specifies the instructions for creating an Ubuntu 14.04 LTS Virtua
 * https://github.com/abstools/abstools/blob/master/Vagrantfile
 * https://gist.github.com/scottvrosenthal/11187116
 * http://stackoverflow.com/questions/10268583/downloading-java-jdk-on-linux-via-wget-is-shown-license-page-instead
+* http://askubuntu.com/questions/80013/how-to-pin-eclipse-to-the-unity-launcher
