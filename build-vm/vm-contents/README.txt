@@ -13,7 +13,7 @@ jStar-Eclipse
 2. Expand the folder 'src' and then expand the package 'basic'.
 3. Right-click on 'Cell.java', and choose the option 'jStar Verification', and then click on 'Verify'.
 4. The result appears in the Console tab at the bottom of the screen.
-5. the result should give an error 'Cannot prove postcondition', along with the reason for the error.
+5. The result should give an error 'Cannot prove postcondition', along with the reason for the error.
 6. In order to fix this error, in Cell.java, make line 19 as 
 		val=x;
    instead of
