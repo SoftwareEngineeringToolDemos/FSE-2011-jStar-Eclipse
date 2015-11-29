@@ -1,0 +1,23 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# For reloading the VM
+required_plugins = %w( vagrant-reload )
+required_plugins.each do |plugin|
+ system "vagrant plugin install vagrant-reload" unless Vagrant.has_plugin? plugin
+end
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "boxcutter/ubuntu1404-desktop"
+  config.vm.provider "virtualbox" do |vb|
+   vb.name="chowan-sagarwa6-FSE-2011-jStar-Eclipse"
+end
+  config.vm.provision :shell, path: "bootstrap1.sh"
+  config.vm.provision :reload
+  config.vm.provision :shell, path: "bootstrap2.sh"
+  config.vm.provision :reload
+  config.vm.provision :shell, path: "bootstrap3.sh"
+  config.vm.provision :reload
+  config.vm.provision :shell, path: "bootstrap4.sh"
+  config.vm.provision :reload
+end
