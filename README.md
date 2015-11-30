@@ -11,6 +11,9 @@ This repository contains information related to the tool jStar-Eclipse presented
 This repository <b><i>IS NOT</i></b> the original repository for this tool. Here are some links to the original project:
 
 * [A Video of the Tool](https://www.youtube.com/watch?v=2QRbdlppgrk)
+* [jStar-Eclipse plugin](https://github.com/seplogic/jstar-eclipse/tree/master/com.jstar.eclipse.update.site)
+* [jStar repository](https://github.com/seplogic/jstar)
+* [Corestar repository](https://github.com/seplogic/corestar)
 
 In this repository, for jStar-Eclipse you will find:
 
@@ -20,4 +23,3 @@ In this repository, for jStar-Eclipse you will find:
 
 This repository was constructed by [Sumeet Agarwal](https://github.com/sumeet29) under the supervision of [Dr. Emerson Murphy-Hill](https://github.com/CaptainEmerson).<br>
 Thanks to Daiva Naudziuniene, Matko Botincan, Dino Distefano, Mike Dodds, Radu Grigore and Matthew Parkinson for their help in establishing this repository.
-
